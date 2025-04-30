@@ -24,8 +24,8 @@ module "eks" {
   key_pair                = "KeypairT"
 }
 
-module "ec2_jumpbox" {
-  source            = "./modules/ec2-jumpbox"
+module "ec2" {
+  source            = "./modules/ec2"
   ami_id            = "ami-0eb302fcc77c2f8bd"  # Replace with valid AMI in your region
   instance_type     = "t3.micro"
   subnet_id         = module.vpc.subnet_ids

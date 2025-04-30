@@ -28,7 +28,7 @@ module "ec2" {
   source            = "./modules/ec2"
   ami_id            = "ami-0eb302fcc77c2f8bd"  # Replace with valid AMI in your region
   instance_type     = "t3.micro"
-  subnet_id         = module.vpc.subnet_ids
+  subnet_id         = module.vpc.subnet_ids[0]
   security_group_id = module.sg.sg_id
   key_name          = "KeypairT"
   jumpbox_role_name               = "staging-eks-jump-role"

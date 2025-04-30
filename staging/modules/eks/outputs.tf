@@ -15,5 +15,5 @@ output "cluster_endpoint" {
 }
 
 output "cluster_name" {
-  value = aws_eks_cluster.sstaging1-eks-cluster.name
+  value = aws_eks_cluster.staging1-eks-cluster.name
 }

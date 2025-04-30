@@ -9,7 +9,7 @@ resource "aws_subnet" "public-webtier-subnet-1" {
   }
 }
 
-###  public Subnet 2 - Webtier  ###
+####  public Subnet 2 - Webtier  ###
 
 resource "aws_subnet" "public-webtier-subnet-2" {
   vpc_id                  = aws_vpc.my_vpc.id

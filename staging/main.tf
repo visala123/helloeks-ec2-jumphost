@@ -31,4 +31,7 @@ module "ec2" {
   subnet_id         = module.vpc.subnet_ids
   security_group_id = module.sg.sg_id
   key_name          = "KeypairT"
+  jumpbox_role_name               = "staging-eks-jump-role"
+  jumpbox_policy_name             = "eks-jump-access-policy"
+  jumpbox_instance_profile_name  = "staging-eks-jump-profile"
 }
